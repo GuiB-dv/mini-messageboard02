@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <ul>
+      <% messages.forEach(function(message){ %>
+      <li>
+        <p><%= message.user %></p>
+        <p><%= message.text %></p>
+        <p><%= message.added %></p>
+      </li>
+      <% }); %> 
+    </ul>
+    <p>Click <a href="/form">here</a> to create a new post</p>
+  </body>
+</html>
